@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row gx-4">
+    @for(doctor of [1,2,3,4,5,6,7,8,9,10,11]; track $index){
+    <div class="col-12 col-lg-6 col-xl-4 gy-4 card-shadow">
+      <div class="card">
+        <h4 class="pt-4" style="text-align: center">Ammar Ahmed</h4>
+        <p style="text-align: center">General Manager</p>
+
+        <div class="user">
+          <img
+            id="userAvatar"
+            src="../../../assets/photo-profil_301783868-4037617333.jpg"
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="accountStats">
+          <div class="detailedAddress">
+            <h6 class="pt-5 mt-4">A-103, shyam gokul flats, Mahatma Road</h6>
+            <h6 class="py-2 pb-5">Mumbai</h6>
+            <h6 class="py-2 pb-3">
+              <i class="fa-solid fa-phone px-2"></i> 011-440-315-76
+            </h6>
+            <button class="btn my-2 mb-4 read">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    }
+  </div>
+</div>

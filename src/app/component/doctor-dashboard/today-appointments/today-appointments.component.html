@@ -1,0 +1,60 @@
+
+
+<div class="row p-2">
+  <div >
+    <div
+      class="p-2 rounded h-300 bg-white"
+      style="background-color: rgba(255, 255, 255, 0.519)"
+    >
+      <h4 class="text-secondary p-2">Today's Appointment</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="text-secondary gray-background">#</th>
+            <th scope="col" class="text-secondary gray-background">
+              Patient Name
+            </th>
+            
+           
+            <th scope="col" class="text-secondary gray-background">
+              Last Visit
+            </th>
+            <th scope="col" class="text-secondary gray-background">Gender</th>
+            <th scope="col" class="text-secondary gray-background">Disease</th>
+            <th scope="col" class="text-secondary gray-background">Report</th>
+            <th scope="col" class="text-secondary gray-background">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (item of
+          todayAppointments;
+          track $index) {
+          <tr>
+            <th>{{ $index + 1 }}</th>
+            <td>{{item.patientName}}</td>
+      
+            <td>2024-3-8</td>
+            <td>{{item.gender}}</td>
+        
+            <td [class]="item">Fever</td>
+            <td><i class="fa-regular fa-file-pdf report"></i></td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-outline-secondary text-primary"
+                disabled
+              >
+                Details
+              </button>
+            </td>
+          </tr>
+
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+    </div>
+ 
+
